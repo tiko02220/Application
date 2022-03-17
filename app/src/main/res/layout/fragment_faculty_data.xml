@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin_data.FacultyData">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/universities"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="75dp"
+        android:hint="@string/choose_university">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+
+            tools:ignore="LabelFor,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextTextFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/universities"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="80dp"
+
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/orange_500"
+        android:hint="@string/faculty_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextGrid"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextFaculty"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/orange_500"
+        android:ems="10"
+        android:hint="@string/grid_new"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextFaculty"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/orange_500"
+
+        android:hint="@string/students"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextFaculty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+</RelativeLayout>
