@@ -18,7 +18,7 @@ import com.example.application.ui.admin_data.AdminData;
 public class AdminFragment extends Fragment {
     Button submit;
 
-
+//new vers
     private FragmentAdminBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
